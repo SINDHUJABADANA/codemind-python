@@ -6,5 +6,5 @@ for i in a:
         if i  not in b:
             print(i,end=' ')
 for i in b:
-    if i not in a:
+    if i  not in a:
         print(i,end=' ')
