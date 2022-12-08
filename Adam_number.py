@@ -1,18 +1,15 @@
+def reverse(a):
+    rev=0
+    while(a>0):
+        rem=a%10
+        rev=rev*10+rem
+        a=a//10
+    return rev
 n=int(input())
-s=n*n
-rev=0
-while n:
-    rem=n%10
-    rev=rev*10+rem
-    n=n//10
-q=rev*rev
-rev1=0
-while q:
-    rem1=q%10
-    rev1=rev1*10+rem1
-    q=q//10
-if rev1==s:
+s1=n*n
+n2=reverse(n)
+s2=n2*n2
+if s1==reverse(s2):
     print("True")
 else:
-    print('False')
-    
+    print("False")
