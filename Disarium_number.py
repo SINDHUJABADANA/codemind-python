@@ -1,20 +1,18 @@
 n=int(input())
 temp=n
 rev=0
-c=0
 s=0
-while temp:
+c=0
+while(temp>0):
     rem=temp%10
     rev=rev*10+rem
     temp=temp//10
-temp=rev
-while temp:
-    rem1=temp%10
+while(rev>0):
+    rem=rev%10
     c+=1
-    temp=temp//10
-    x=rem1**c
-    s=s+x
-if s==n:
-    print('True')
+    s=s+(rem**c)
+    rev=rev//10
+if(n==s):
+    print("True")
 else:
-    print('False')
+    print("False")
