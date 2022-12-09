@@ -13,9 +13,7 @@ for i in range(1,n+1):
     for j in range(1,n+1):
         if i!=j:
             if(i*j==n):
-               k=prime(i)
-               l=prime(j)
-               if(k==1 and l==1):
+               if prime(i)==1 and prime(j)==1:
                    print(i,j)
                    f=1
     if f==1:
